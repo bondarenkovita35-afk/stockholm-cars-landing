@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NordicBil Stockholm — Performance & Electric Cars</title>
+
+    <!-- Orbitron + базовый текстовый шрифт -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <!-- Фон с переливами -->
+    <div class="page-gradient-bg"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-logo-circle">
+                <span>NB</span>
+            </div>
+            <div class="brand-text">
+                <div class="brand-name" data-i18n="brand.name">NordicBil Stockholm</div>
+                <div class="brand-sub" data-i18n="brand.sub">Премиальные и электрические авто</div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#hero" data-i18n="nav.home" class="nav-link">Главная</a>
+            <a href="#cars" data-i18n="nav.cars" class="nav-link">Авто</a>
+            <a href="#why" data-i18n="nav.why" class="nav-link">Почему мы</a>
+            <a href="#reviews" data-i18n="nav.reviews" class="nav-link">Отзывы</a>
+            <a href="#contact" data-i18n="nav.contact" class="nav-link">Контакты</a>
+        </nav>
+
+        <button class="lang-toggle" id="langToggle" aria-label="Change language">
+            <span id="langCurrent">RU</span>
+        </button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="section hero">
+            <div class="hero-content reveal">
+                <p class="hero-kicker" data-i18n="hero.kicker">
+                    Премиальные авто • Стокгольм
+                </p>
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Машина, которая говорит за тебя ещё до того, как ты выйдешь.
+                </h1>
+                <p class="hero-text" data-i18n="hero.text">
+                    Мы подбираем авто под твой ритм жизни и уровень. Без давления, без навязанного выбора — только
+                    честные рекомендации и машины, на которые приятно садиться каждое утро.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_test">
+                        Забронировать тест-драйв
+                    </a>
+                    <a href="#cars" class="btn btn-ghost" data-i18n="hero.cta_cars">
+                        Посмотреть авто
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span class="pill" data-i18n="hero.tag_trust">10+ лет доверия в Стокгольме</span>
+                    <span class="pill" data-i18n="hero.tag_time">Оформление от 60 минут</span>
+                    <span class="pill" data-i18n="hero.tag_match">Подбор под твой образ жизни</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="neon-panel">
+                    <div class="neon-orbit"></div>
+                    <div class="neon-orbit orbit-2"></div>
+                    <div class="neon-orbit orbit-3"></div>
+                    <div class="neon-core"></div>
+                </div>
+                <p class="hero-visual-text" data-i18n="hero.visual">
+                    Металлический блеск, неоновый город и авто, которое выделяется в любом потоке.
+                </p>
+            </div>
+        </section>
+
+        <!-- ТРИ СЦЕНАРИЯ -->
+        <section id="cars" class="section cards-3">
+            <h2 class="section-title" data-i18n="cars.title">
+                NordicBil: там, где машины выбирают людей
+            </h2>
+            <p class="section-text" data-i18n="cars.text">
+                Мы специально не публикуем цены на сайте. Сначала слушаем, кто ты, как живёшь и как машина должна
+                работать на тебя — и только потом предлагаем варианты.
+            </p>
+
+            <div class="card-grid">
+                <article class="glass-card reveal">
+                    <h3 data-i18n="cars.city_title">Городской хищник</h3>
+                    <p data-i18n="cars.city_text">
+                        Компактные, но мощные авто, которые легко паркуются в центре, быстро реагируют на движение и при
+                        этом выглядят максимально статусно.
+                    </p>
+                    <ul class="card-list">
+                        <li data-i18n="cars.city_b1">Идеален для центра Стокгольма</li>
+                        <li data-i18n="cars.city_b2">Помощь с выбором комплектации</li>
+                        <li data-i18n="cars.city_b3">Лёгкий переход на электродвижение</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="cars.city_cta">Подобрать городской сет</a>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h3 data-i18n="cars.electric_title">Электрическое будущее</h3>
+                    <p data-i18n="cars.electric_text">
+                        Электромобили, которые действительно подходят под твои маршруты. Не просто «модно», а выгодно и
+                        продуманно: зарядка, пробег, расходы — всё считаем вместе.
+                    </p>
+                    <ul class="card-list">
+                        <li data-i18n="cars.electric_b1">Реальные расчёты экономии</li>
+                        <li data-i18n="cars.electric_b2">Помощь с установкой зарядки</li>
+                        <li data-i18n="cars.electric_b3">Экологично и статусно</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="cars.electric_cta">Подобрать электрокласс</a>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h3 data-i18n="cars.family_title">Business &amp; Family</h3>
+                    <p data-i18n="cars.family_text">
+                        Машины, где комфорт семьи и твой профессиональный образ не конфликтуют. Пространство,
+                        безопасность и чувство, что выбор был правильным.
+                    </p>
+                    <ul class="card-list">
+                        <li data-i18n="cars.family_b1">Максимальная безопасность</li>
+                        <li data-i18n="cars.family_b2">Комфорт на дальние поездки</li>
+                        <li data-i18n="cars.family_b3">Несколько сценариев покупки</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="cars.family_cta">Подобрать семейный формат</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ПОЧЕМУ ВОЗВРАЩАЮТСЯ -->
+        <section id="why" class="section why">
+            <h2 class="section-title" data-i18n="why.title">
+                Почему клиенты возвращаются в NordicBil, даже когда не нужно менять авто
+            </h2>
+            <p class="section-text" data-i18n="why.text">
+                Мы строим не разовую сделку, а отношения. Наша цель — чтобы через год ты сказал: «Это было лучшее
+                решение на тот момент».
+            </p>
+
+            <div class="card-grid card-grid-2">
+                <article class="glass-card reveal">
+                    <h3 data-i18n="why.no_pressure_title">Честный разговор без агрессивных продаж</h3>
+                    <p data-i18n="why.no_pressure_text">
+                        Мы спокойно обсуждаем бюджет, сомнения и страхи. Если сейчас не время покупать — так и говорим.
+                    </p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h3 data-i18n="why.transparent_title">Прозрачная история каждой машины</h3>
+                    <p data-i18n="why.transparent_text">
+                        Диагностика, сервис, владельцы — ты видишь те же данные, что и мы.
+                    </p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h3 data-i18n="why.match_title">Подбор под характер, а не только под кошелёк</h3>
+                    <p data-i18n="why.match_text">
+                        Режим дня, семья, путешествия — под это подбираем класс, двигатель и кузов.
+                    </p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h3 data-i18n="why.after_title">Сопровождение после покупки</h3>
+                    <p data-i18n="why.after_text">
+                        Вопросы по обслуживанию, ИТО, страховке, резине — у тебя есть живой контакт в NordicBil, который
+                        знает твою машину.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section id="reviews" class="section reviews">
+            <h2 class="section-title" data-i18n="reviews.title">
+                Что говорят наши клиенты
+            </h2>
+
+            <div class="reviews-grid">
+                <article class="review-card reveal">
+                    <p data-i18n="reviews.r1_text">
+                        «Я пришёл за “просто машиной”, а ушёл с ощущением, что меня наконец-то услышали. Через год купил
+                        второе авто — даже не сравнивал с другими салонами».
+                    </p>
+                    <span class="review-name" data-i18n="reviews.r1_name">Михаил, предприниматель</span>
+                </article>
+
+                <article class="review-card reveal">
+                    <p data-i18n="reviews.r2_text">
+                        «Для нас было важно безопасное семейное авто, но без ощущения “огромного автобуса”. Нас не
+                        торопили, а объяснили каждую деталь. В итоге получили то, что действительно нужно».
+                    </p>
+                    <span class="review-name" data-i18n="reviews.r2_name">Анна и Эмиль, семья с двумя детьми</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contact" class="section contact">
+            <div class="contact-inner reveal">
+                <h2 class="section-title" data-i18n="contact.title">
+                    Давай подберём машину под твою жизнь
+                </h2>
+                <p class="section-text" data-i18n="contact.text">
+                    Напиши нам пару строк — как ты живёшь, где чаще всего ездишь и что важно в машине. Мы ответим в
+                    течение одного рабочего дня и предложим несколько сценариев, без давления и обязательств.
+                </p>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label>
+                            <span data-i18n="contact.name_label">Имя</span>
+                            <input type="text" name="name" placeholder="Например, Алекс" />
+                        </label>
+                        <label>
+                            <span data-i18n="contact.email_label">E-mail</span>
+                            <input type="email" name="email" placeholder="you@example.com" />
+                        </label>
+                    </div>
+
+                    <label>
+                        <span data-i18n="contact.message_label">Опиши свой запрос</span>
+                        <textarea name="message" rows="4"
+                            placeholder="Город, пробег в год, семья, стиль езды..."></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.submit">
+                        Отправить запрос
+                    </button>
+
+                    <p class="contact-note" data-i18n="contact.note">
+                        Мы не рассылаем спам и не передаём контакты третьим лицам.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="VS LiteCode Studio logo" class="footer-logo" />
+                <div class="footer-text">
+                    <span class="footer-title">VS LiteCode Studio</span>
+                    <span class="footer-sub" data-i18n="footer.sub">
+                        Цифровые лендинги с характером. Дизайн &amp; разработка под ключ.
+                    </span>
+                </div>
+            </div>
+            <span class="footer-rights">© 2025 NordicBil Stockholm</span>
+        </div>
+    </footer>
+</body>
+
+</html>
